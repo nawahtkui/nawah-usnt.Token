@@ -94,11 +94,11 @@ Roadmap
 
 2027-2029: Ecosystem expansion, NFTs, and augmented reality experiences
 
+
+
 Important Links
 
 📄 English Whitepaper
-
-🇸🇦 Arabic Whitepaper
 
 📊 Tokenomics
 
