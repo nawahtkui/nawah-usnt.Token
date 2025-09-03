@@ -1,8 +1,8 @@
-# 🟢 USNT Project Notes & Marketing Concepts
+# 🟢 USNT TOKEN  Project Notes & Marketing Concepts
 
 ## 1️⃣ Whitepaper – Final Chapter
 
-### USNT – Integrated Global Advancement
+### USNT Token – Integrated Global Advancement
 
 **Universal Sovereign Nations Token (USNT)** is more than just a digital currency; it represents a **comprehensive concept of global advancement** that integrates **thought, politics, economy, and technology**, establishing a foundation for a **new international system**. This vision is a **true revolution in thinking, politics, and economics**, aimed at achieving **global security and stability**.
 
