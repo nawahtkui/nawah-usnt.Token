@@ -1,4 +1,12 @@
 # Nawah USNT (رمز NAWAH العالمي الذكي)
+<p align="center">
+  <picture>
+    <source srcset="assets/images/nawah_token_logo.svg" type="image/svg+xml">
+    <img src="assets/images/nawah_token_logo.png" alt="Nawah Token Logo" width="160"/>
+  </picture>
+</p>
+
+# Nawah USNT Token
 
 مرحبًا بكم في مستودع مشروع **Nawah USNT / Universal Smart Nawah Token**!  
 هذا المستودع يحتوي على كل ما يتعلق بالمشروع: العقود الذكية، واجهات Web3، NFTs، والتوثيق التقني.
