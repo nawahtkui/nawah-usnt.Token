@@ -7,12 +7,8 @@
 </p>
 
 
-# Nawah USNT Token
-
 # Nawah USNT (رمز NAWAH العالمي الذكي)
 
-
-# Nawah USNT Token
 
 مرحبًا بكم في مستودع مشروع **Nawah USNT / Universal Smart Nawah Token**!  
 هذا المستودع يحتوي على كل ما يتعلق بالمشروع: العقود الذكية، واجهات Web3، NFTs، والتوثيق التقني.
@@ -23,65 +19,6 @@
 
 **Nawah USNT** عبارة عن رمز رقمي ثقافي لامركزي يركز على **تمكين المرأة والشباب** من خلال **ابتكار blockchain و NFTs وأدوات Web3**.  
 المشروع يجمع بين **التراث الحضاري والابتكار التقني** لتمكين الشباب والفنانات والمبدعين.
-
----
-
-## 📂 هيكل المشروع
-
-
-nawah-usnt
-
-
-├── contracts/ # العقود الذكية (Solidity)
-
-│ ├── USNTToken.sol # عقد BEP-20 الرئيسي
-
-│ ├── USNTStaking.sol # عقد Staking
-
-│ ├── USNTFutures.sol # عقد تداول Futures
-
-│ ├── USNTOptions.sol # عقد Options
-
-│ └── USNTBetting.sol # عقد المشاركة المجتمعية
-
-│
-
-├── ui/ # واجهة Web3 (React / HTML / JS)
-
-│ ├── index.html
-
-│ ├── web3.js
-
-│ └── css/
-
-│
-
-├── wallet/ # واجهة المحفظة الرقمية (موجهة للنساء والشباب)
-
-│
-
-├── whitepapers/ # الوثائق الرسمية
-
-│ ├── Nawah_USNT_Whitepaper_EN.pdf
-
-│ └── Nawah_USNT_Whitepaper_AR.pdf
-
-
-├── docs/ # التوثيق الرسمي
-
-│ ├── Tokenomics.md
-
-│ ├── SECURITY.md
-
-│ └── Algorand_guide.md
-
-
-├── Project_Settings.md # إعدادات المشروع العامة
-
-├── README.md # نظرة عامة على المشروع
-
-└── LICENSE # رخصة MIT
-
 
 ---
 
@@ -150,11 +87,6 @@ nawah-usnt
 
 ## 🔗 روابط مهمة
 
-- 📄 [الورقة البيضاء (إنجليزي)](whitepapers/Nawah_USNT_Whitepaper_EN.pdf)  
-- 📄 [الورقة البيضاء (عربي)](whitepapers/Nawah_USNT_Whitepaper_AR.pdf)  
-- 📊 [Tokenomics](docs/Tokenomics.md)  
-- 🔐 [سياسات الأمان](docs/SECURITY.md)  
-- 📁 [Project Settings](Project_Settings.md)  
 
 
 
