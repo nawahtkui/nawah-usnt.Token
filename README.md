@@ -1,4 +1,3 @@
-
 <p align="center">
   <picture>
     <source srcset="assets/images/nawah_token_logo.svg" type="image/svg+xml">
@@ -6,127 +5,153 @@
   </picture>
 </p>
 
+# Nawah USNT (رمز USNT الذكي العالمي)
 
-# Nawah USNT (رمز NAWAH العالمي الذكي)
-
-
-مرحبًا بكم في مستودع مشروع **Nawah USNT / Universal Smart Nawah Token**!  
-هذا المستودع يحتوي على كل ما يتعلق بالمشروع: العقود الذكية، واجهات Web3، NFTs، والتوثيق التقني.
+مرحبًا بكم في مستودع مشروع **Nawah USNT / Universal Smart Nawah Token**!
+هذا المستودع يحتوي على كل ما يتعلق بالمشروع: العقود الذكية، الواجهات، NFTs، والتوثيق التقني.
 
 ---
 
 ## 🌐 ملخص المشروع
 
-**Nawah USNT** عبارة عن رمز رقمي ثقافي لامركزي يركز على **تمكين المرأة والشباب** من خلال **ابتكار blockchain و NFTs وأدوات Web3**.  
+**Nawah USNT** عبارة عن رمز رقمي ثقافي لامركزي يركز على **تمكين المرأة والشباب** من خلال **ابتكار blockchain و NFTs وأدوات Web3**.
 المشروع يجمع بين **التراث الحضاري والابتكار التقني** لتمكين الشباب والفنانات والمبدعين.
 
 ---
 
 ## 🎨 الرؤية والفلسفة الثقافية
 
-**Nawah USNT** يجسر الحضارات مستلهمًا من **رموز القيادة النسائية والابتكار الشبابي**.  
+**Nawah USNT** يجسر الحضارات مستلهمًا من **رموز القيادة النسائية والابتكار الشبابي**.
 يهدف إلى منح **النساء والمبدعين الشباب** صوتًا رقميًا وحضورًا اقتصاديًا على Web3.
 
 ---
 
 ## 🛠️ البنية التقنية
 
-- **اسم التوكن:** Nawah USNT  
-- **الرمز (Ticker):** USNT  
-- **البلوكتشين:** Binance Smart Chain (BEP-20)  
-- **العقود الذكية:** Solidity + OpenZeppelin  
-- **دعم NFT:** IPFS, OpenSea، وتوسع مستقبلي متعدد الشبكات  
+* **اسم التوكن:** Nawah USNT
+* **الرمز (Ticker):** USNT
+* **الشبكات المستهدفة:**
+
+  * **BNB Chain (BEP-20)** — عقود Solidity مع OpenZeppelin.
+  * **Algorand (ASA)** — أصول قياسية + عقود Staking لاحقًا.
+* **تقنيات الواجهة:** TypeScript / React + Tailwind.
+* **دعم NFT:** IPFS (قيد التجهيز) مع تكامل مستقبلي مع OpenSea / أسواق مناسبة.
 
 ---
 
 ## 💳 المحفظة الرقمية
 
-- واجهة **Card-style** لعنوان متعدد الشبكات (Ethereum, BNB Chain, Polygon)  
-- تجربة مستخدم أنيقة موجهة للنساء والشباب مع عرض الرصيد، QR codes، وأزرار سريعة (Send/Receive/Stake/Copy)  
-- لوحة تحكم متكاملة: Totals, Notifications, Campaign Highlights  
+* واجهة **Card-style** لعنوان متعدد الشبكات (Ethereum, BNB Chain, Polygon).
+* تجربة أنيقة موجهة للنساء والشباب مع عرض الرصيد، QR، وأزرار سريعة (Send / Receive / Stake / Copy).
+* لوحة تحكّم متكاملة: Totals، Notifications، Campaign Highlights.
 
 ---
 
 ## 📊 Tokenomics
 
-| الفئة                | النسبة   | عدد التوكنات      |
-|----------------------|---------|----------------|
-| مكافآت المجتمع       | 30%     | 30,000,000     |
-| المؤسسون والفريق      | 15%     | 15,000,000     |
-| الشراكات الاستراتيجية | 10%     | 10,000,000     |
-| صندوق الاحتياطي       | 20%     | 20,000,000     |
-| تطوير النظام البيئي   | 25%     | 25,000,000     |
+**إجمالي المعروض (Total Supply):** 100,000,000 USNT
+**المنازل العشرية (Decimals):** 6
+
+| البند                   | النسبة % | العدد (USNT) | ملاحظات                   |
+| ----------------------- | -------- | ------------ | ------------------------- |
+| السيولة (Liquidity)     | 25%      | 25,000,000   | لقفلها في PancakeSwap     |
+| الفريق (Team)           | 10%      | 10,000,000   | تُفتح تدريجيًا (Vesting)  |
+| التسويق (Marketing)     | 15%      | 15,000,000   | الحملات والإعلانات        |
+| الشراكات (Partnerships) | 15%      | 15,000,000   | تعاون مع مشاريع أخرى      |
+| الاحتياطي (Reserve)     | 20%      | 20,000,000   | للطوارئ والتطوير          |
+| المجتمع (Community)     | 15%      | 15,000,000   | مسابقات وحوافز المستخدمين |
 
 ---
 
 ## 🔐 الأمان والشفافية
 
-- محافظ **Multi-signature** للخزينة والعمليات الحساسة  
-- إمكانية **إلغاء الملكية** بعد الإطلاق لضمان اللامركزية  
-- مراجعات خارجية للعقود الذكية (مستقبليًا)  
-- **Liquidity** مؤمنة على PancakeSwap  
-- عدم مشاركة ملفات .env، استخدام .env.example للتطوير المحلي  
+* محافظ **Multi-Signature** للخزينة والعمليات الحسّاسة.
+* **إلغاء الملكية** بعد الإطلاق لضمان اللامركزية.
+* مراجعات خارجية للعقود الذكية (لاحقًا).
+* سيولة **Liquidity** مؤمّنة على PancakeSwap عند الإطلاق.
+* عدم مشاركة ملفات `.env` — استخدم `/.env.example` للتطوير المحلي.
 
 ---
 
 ## 🏛️ الحوكمة والامتثال
 
-- حاملو التوكن يصوتون على مقترحات المنصة  
-- تكامل KYC/AML اختياري للتطبيقات اللامركزية  
-- الالتزام بالمعايير القانونية الدولية للنزاهة المالية  
+* حاملو USNT يصوّتون على مقترحات المنصّة.
+* تكامل KYC/AML اختياري لبعض dApps.
+* الالتزام بالمعايير القانونية الدولية للنزاهة المالية.
 
 ---
 
-## 📆 خارطة الطريق التقنية
+## 📆 خارطة الطريق
 
-- **2025:** نشر العقود الذكية وإطلاق الورقة البيضاء  
-- **2026:** إصدار المحفظة وبدء الحوكمة اللامركزية  
-- **2027-2029:** توسع النظام البيئي، NFTs، وتجارب الواقع المعزز  
+* **2025:** نشر العقود الذكية وإطلاق الورقة البيضاء.
+* **2026:** إصدار المحفظة وبداية الحوكمة اللامركزية.
+* **2027–2029:** توسّع النظام البيئي، NFTs، وتجارب الواقع المعزّز.
 
 ---
 
-## 🔗 روابط مهمة
+## 🔗 روابط مباشرة (تعمل)
 
+> **GitHub & وثائق المشروع**
 
+* المستودع الرئيسي: [https://github.com/nawahtkui/nawah-usnt.Token](https://github.com/nawahtkui/nawah-usnt.Token)
+* ويكي المشروع: [https://github.com/nawahtkui/nawah-usnt.Token/wiki](https://github.com/nawahtkui/nawah-usnt.Token/wiki)
+* 📄 الورقة البيضاء (One-Pager Whitepaper):
+  [https://raw.githubusercontent.com/nawahtkui/nawah-usnt.Token/0cd521d4ebd5f29065bdaee77caa314433cdc5d3/Nawah\_USNT\_OnePager\_Complete.pdf](https://raw.githubusercontent.com/nawahtkui/nawah-usnt.Token/0cd521d4ebd5f29065bdaee77caa314433cdc5d3/Nawah_USNT_OnePager_Complete.pdf)
+* 📊 خارطة الطريق التقنية (Technical Roadmap):
+  [https://github.com/nawahtkui/nawah-usnt.Token/blob/main/USNT\_Technical\_Roadmap.md](https://github.com/nawahtkui/nawah-usnt.Token/blob/main/USNT_Technical_Roadmap.md)
 
+> **Algorand (TestNet)**
 
-# إعدادات مشروع Universal Smart Nawah Token (USNT)
+* مستكشف Pera (Algorand Explorer): [https://explorer.perawallet.app/](https://explorer.perawallet.app/)
+* أصل USNT (ASA) على TestNet: [https://explorer.perawallet.app/asset/84659351](https://explorer.perawallet.app/asset/84659351)
+* صنبور Algorand TestNet (Faucet): [https://bank.testnet.algorand.network/](https://bank.testnet.algorand.network/)
+* محفظة Pera Wallet: [https://perawallet.app/](https://perawallet.app/)
 
-## 🔹 المعلومات الأساسية
+> **مراجع تقنية**
 
-- اسم المشروع: Universal Smart Nawah Token  
-- رمز المشروع (Ticker): USNT  
-- إجمالي العرض: 100,000,000  
-- القابلية للقسمة: 6 منازل عشرية (0.000001)  
-- الإدارة: Multi-Sig Wallet (مثلاً 5 من 9)
+* OpenZeppelin (معايير العقود): [https://www.openzeppelin.com/contracts](https://www.openzeppelin.com/contracts)
+* وثائق Algorand للمطورين: [https://developer.algorand.org/](https://developer.algorand.org/)
 
-## 🔹 الشبكة
+---
 
-- البداية: Algorand TestNet  
-- لاحقًا: Algorand MainNet  
-- العقود الذكية: ASA + Staking Contract
+## 📁 هيكلة المستودع (مختصر)
 
-## 🔹 NFT / الفن الرقمي
+```
+/
+├── contracts/            # عقود Solidity (BEP-20 / توابع)
+├── Web3 HTML/            # نماذج صفحات Web3
+├── *.tsx                 # مكوّنات React للواجهة
+├── index.html            # صفحة واجهة بسيطة
+├── package.json          # إعدادات المشروع الأمامية
+├── USNT_Technical_Roadmap.md
+└── Nawah_USNT_OnePager_Complete.pdf
+```
 
-- NFT أول: "نور الحكمة"  
-- Unit Name: NWRM  
-- Metadata URL: [nft_metadata/nour_alhikma.json](nft_metadata/nour_alhikma.json)  
-- Creator: USNT Token  
-- Artist: Ali Alnuwairah  
-- Series: Empowerment Collection  
-- Edition: 1  
-- Year: 2025  
+---
 
-## 🔹 المواقع والروابط
+## ⚙️ البدء محليًا
 
-- الموقع الرسمي: [website/index.html](website/index.html)  
-- Timeline: [website/timeline.html](website/timeline.html)  
-- معرض NFT: [website/nft-gallery.html](website/nft-gallery.html)  
+```bash
+# 1) تثبيت الاعتمادات
+npm install
 
-## 🔹 التوثيق والأمان
+# 2) تشغيل الواجهة للتطوير
+npm run dev
 
-- Tokenomics: [docs/Tokenomics.md](docs/Tokenomics.md)  
-- Security: [docs/SECURITY.md](docs/SECURITY.md)  
-- Algorand Guide: [docs/Algorand_guide.md](docs/Algorand_guide.md)  
+# 3) بناء النسخة الإنتاجية
+npm run build
+```
 
-##
+> **ملاحظة:** تأكد من نسخ `.env.example` إلى `.env` وتعبئة المفاتيح اللازمة عند الحاجة.
+
+---
+
+## 🤝 المساهمة
+
+مرحبًا بالمساهمات! افتح **Issue** أو **Pull Request** مع وصف واضح. لاقتراحات المزايا الكبرى، استخدم صفحات **Wiki**.
+
+---
+
+## 📜 الترخيص
+
+© 2025 Nawah USNT — جميع الحقوق محفوظة. سيتم تحديد نوع الترخيص لاحقًا.
