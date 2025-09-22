@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 1. التحقق من وجود الملفات
+      # 1️⃣ التحقق من وجود الملفات
       - name: Verify SECURITY.md exists
         run: |
           if [ ! -f "SECURITY.md" ]; then
@@ -27,7 +27,7 @@ jobs:
             echo "❌ Tokenomics.md is missing!" >> error.log
           fi
 
-      # 2. التحقق من محتوى SECURITY.md
+      # 2️⃣ التحقق من محتوى SECURITY.md
       - name: Check SECURITY.md content
         run: |
           if [ -f "SECURITY.md" ]; then
@@ -38,7 +38,7 @@ jobs:
             fi
           fi
 
-      # 3. التحقق من محتوى Tokenomics.md
+      # 3️⃣ التحقق من محتوى Tokenomics.md
       - name: Check Tokenomics total distribution
         run: |
           if [ -f "Tokenomics.md" ]; then
@@ -50,7 +50,7 @@ jobs:
             fi
           fi
 
-      # 4. فتح Issue تلقائي إذا كان هناك خطأ
+      # 4️⃣ فتح Issue تلقائي عند وجود خطأ
       - name: Create GitHub Issue on error
         if: always()
         uses: peter-evans/create-issue-from-file@v6
@@ -59,7 +59,7 @@ jobs:
           content-file: error.log
           labels: bug, documentation
 
-      # 5. إرسال تنبيه Telegram
+      # 5️⃣ إرسال تنبيه Telegram
       - name: Send Telegram Notification
         if: always()
         env:
