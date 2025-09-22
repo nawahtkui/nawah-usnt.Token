@@ -1,4 +1,4 @@
-name: Check Docs Content
+name: Smart Docs Check & Notifications
 
 on:
   push:
@@ -7,42 +7,67 @@ on:
     branches: [ main ]
 
 jobs:
-  check-docs-content:
+  check-docs-smart:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 1. التحقق من وجود الملفات
       - name: Verify SECURITY.md exists
         run: |
           if [ ! -f "SECURITY.md" ]; then
-            echo "❌ SECURITY.md is missing!"
-            exit 1
+            echo "❌ SECURITY.md is missing!" >> error.log
           fi
 
       - name: Verify Tokenomics.md exists
         run: |
           if [ ! -f "Tokenomics.md" ]; then
-            echo "❌ Tokenomics.md is missing!"
-            exit 1
+            echo "❌ Tokenomics.md is missing!" >> error.log
           fi
 
+      # 2. التحقق من محتوى SECURITY.md
       - name: Check SECURITY.md content
         run: |
-          if ! grep -q "Ownership & Transparency" SECURITY.md; then
-            echo "❌ SECURITY.md missing required section 'Ownership & Transparency'"
-            exit 1
-          else
-            echo "✅ SECURITY.md contains 'Ownership & Transparency'"
+          if [ -f "SECURITY.md" ]; then
+            if ! grep -q "Ownership & Transparency" SECURITY.md; then
+              echo "❌ SECURITY.md missing required section 'Ownership & Transparency'" >> error.log
+            else
+              echo "✅ SECURITY.md contains 'Ownership & Transparency'"
+            fi
           fi
 
+      # 3. التحقق من محتوى Tokenomics.md
       - name: Check Tokenomics total distribution
         run: |
-          TOTAL=$(grep -oE '[0-9]+' Tokenomics.md | awk '{sum += $1} END {print sum}')
-          if [ "$TOTAL" -ne 100000000 ]; then
-            echo "❌ Tokenomics.md total distribution ($TOTAL) != 100,000,000 NWTK"
-            exit 1
-          else
-            echo "✅ Tokenomics.md total distribution is correct (100,000,000 NWTK)"
+          if [ -f "Tokenomics.md" ]; then
+            TOTAL=$(grep -oE '[0-9]+' Tokenomics.md | awk '{sum += $1} END {print sum}')
+            if [ "$TOTAL" -ne 100000000 ]; then
+              echo "❌ Tokenomics.md total distribution ($TOTAL) != 100,000,000 NWTK" >> error.log
+            else
+              echo "✅ Tokenomics.md total distribution is correct (100,000,000 NWTK)"
+            fi
           fi
+
+      # 4. فتح Issue تلقائي إذا كان هناك خطأ
+      - name: Create GitHub Issue on error
+        if: always()
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: "⚠️ Error in critical docs detected"
+          content-file: error.log
+          labels: bug, documentation
+
+      # 5. إرسال تنبيه Telegram
+      - name: Send Telegram Notification
+        if: always()
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -f error.log ]; then
+            MESSAGE="⚠️ Errors detected in SECURITY.md / Tokenomics.md:\n$(cat error.log)"
+            curl -s -X POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage \
+              -d chat_id=$TELEGRAM_CHAT_ID \
+              -d text="$MESSAGE"
