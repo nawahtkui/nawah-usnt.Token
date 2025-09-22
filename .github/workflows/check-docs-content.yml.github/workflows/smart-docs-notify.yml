@@ -53,7 +53,7 @@ jobs:
       # 4️⃣ فتح Issue تلقائي عند وجود خطأ
       - name: Create GitHub Issue on error
         if: always()
-        uses: peter-evans/create-issue-from-file@v6
+        uses: peter-evans/create-issue-from-file@v5
         with:
           title: "⚠️ Error in critical docs detected"
           content-file: error.log
